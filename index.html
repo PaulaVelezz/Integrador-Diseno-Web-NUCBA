@@ -1,56 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Museo E.C</title>
-    <link rel="stylesheet" href="style.css"> 
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
     <header>
-        <img src="./assets/ecm (1).png" alt="logo museo" class="logo">
-        <nav class="navbar">
-            <ul class="navbar-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Museo</a></li>
-                <li><a href="#">Galeria</a></li>
-                <li><a href="#">Eventos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-            <a href="#"><img src="./assets/ticket(1).png" alt="tickets" class="ticket-icon"></a>
-        </nav>
+      <img src="./assets/logo bw.png" alt="logo museo" class="logo" />
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Museo</a></li>
+          <li><a href="#">Galería</a></li>
+          <li><a href="#">Eventos</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+        <a href="#"
+          ><img src="./assets/ticket(2).png" alt="tickets" class="ticket-icon"
+        /></a>
+      </nav>
     </header>
-    <main> <!-- secciones que quiero hacer: hero video, sobre el museo, gallery, eventos, tickets, contacto con mapa-->
-        <section id="hero">
-            <div class="hero-info">
-                <h1>Welcome to The E.C Museum</h1>
-                <a href="#">Reserva tu visita</a>
+    <main>
+      <!-- hero -->
+      <section id="hero">
+        <div class="hero-info">
+          <h1>Welcome to The E.C. Museum</h1>
+          <a href="#">Reserva tu visita</a>
+        </div>
+        <video muted autoplay loop>
+          <source src="./assets/video 2.mp4" type="video/mp4" />
+        </video>
+        <div class="capa"></div>
+      </section>
+      <!-- section museo -->
+      <section id="Museo">
+        <div class="museo-info">
+          <h2>Museo</h2>
+          <p>
+            El Museo E.C. es una institución cultural que tiene como objetivo
+            establecer un diálogo entre la memoria artística local y la
+            producción contemporánea. Combinando el trabajo sobre su colección,
+            con una activa agenda de exposiciones que reúne artistas de diversas
+            procedencias. Ademas cuenta con un servicio educativo (con visitas
+            guiadas, talleres y programas especiales) y una biblioteca
+            especializada.
+          </p>
+        </div>
+        <div class="museo-img">
+          <img src="./assets/plano-01-01.jpg" alt="plano-gral" />
+        </div>
+      </section>
+
+      <!-- section galería -->
+
+      <section id="Galería">
+        <div class="galeria-info">
+          <h2>Galería</h2>
+          <p></p>
+        </div>
+        <div class="expo-container">
+          <div class="exposiciones">
+            <img
+              src="./assets/1914.57 - The Fountain, Villa Torlonia, Frascati, Italy.jpg"
+            />
+            <div class="expo-info">
+              <!-- top -->
+              <div class="info-top">
+                <h3>Exposición 2022</h3>
+              </div>
+              <!-- bottom -->
+              <div class="info-bot">
+                <button class="btn-vm">Ver más</button>
+              </div>
             </div>
-            <video muted autoplay loop>
-                <source src="./assets/video 2.mp4" type="video/mp4">
-            </video>
-            <div class="capa"></div>
-        </section>
+          </div>
+        </div>
 
-        <section id="Museo">
-            <h2>Museo</h2>
-            <p>El Museo E.C es una institución cultural que tiene como objetivo establecer un diálogo entre la memoria artística local y la producción contemporánea. 
-                Combinando el trabajo sobre su colección, con una activa agenda de exposiciones que reúne artistas de diversas procedencias. 
-                Ademas cuenta con un servicio educativo (con visitas guiadas, talleres y programas especiales) y una biblioteca especializada.</p>
-            <img src="./assets/plano-01-01.jpg" alt="plano-gral">
-        </section>
+        <div class="expo-container">
+            <div class="exposiciones">
+              <img
+                src="./assets/1926.417 - The Bedroom.jpg"
+              />
+              <div class="expo-info">
+                <!-- top -->
+                <div class="info-top">
+                  <h3>Exposición 2022</h3>
+                </div>
+                <!-- bottom -->
+                <div class="info-bot">
+                  <button class="btn-vm">Ver más</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <section id="Galeria">
-            <h2>Galeria</h2>
-        </section>
+          <div class="expo-container">
+            <div class="exposiciones">
+              <img
+                src="./assets/young_woman_with_peonies_1983.1.6.jpg"
+              />
+              <div class="expo-info">
+                <!-- top -->
+                <div class="info-top">
+                  <h3>Exposición 2022</h3>
+                </div>
+                <!-- bottom -->
+                <div class="info-bot">
+                  <button class="btn-vm">Ver más</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <section id="Eventos">
-            <div></div>
-        </section>
+          <div class="expo-container">
+            <div class="exposiciones">
+              <img
+                src="./assets/still_life_with_bottle,_carafe,_bread,_and_wine_2014.18.32.jpg"
+              />
+              <div class="expo-info">
+                <!-- top -->
+                <div class="info-top">
+                  <h3>Exposición 2022</h3>
+                </div>
+                <!-- bottom -->
+                <div class="info-bot">
+                  <button class="btn-vm">Ver más</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <section id="Contacto">
-            <!--H o r a r i o
+          <div class="expo-container">
+            <div class="exposiciones">
+              <img
+                src="./assets/DP146455.jpg"
+              />
+              <div class="expo-info">
+                <!-- top -->
+                <div class="info-top">
+                  <h3>Exposición 2022</h3>
+                </div>
+                <!-- bottom -->
+                <div class="info-bot">
+                  <button class="btn-vm">Ver más</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="expo-container">
+            <div class="exposiciones">
+              <img
+                src="./assets/DP356133.jpg"
+              />
+              <div class="expo-info">
+                <!-- top -->
+                <div class="info-top">
+                  <h3>Exposición 2022</h3>
+                </div>
+                <!-- bottom -->
+                <div class="info-bot">
+                  <button class="btn-vm">Ver más</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </section>
+
+      <!-- section eventos -->
+
+      <section id="Eventos">
+        <div class="eventos-info">
+          <h2>Eventos</h2>
+          <p></p>
+        </div>
+      </section>
+      <!-- section contacto -->
+      <section id="Contacto">
+        <!--H o r a r i o
             Martes a domingos y feriados de 10 a 19 hs.
         E n t r a d a
         U N I C A M E N T E (inclusive para entradas gratuitas): autoentrada.com
@@ -61,11 +193,9 @@
         
         Av. Poeta Lugones, Argentina | (351) 555-5555   mec.comunicacion@mail.com
     -->
-        </section>
+      </section>
     </main>
-</body>
+  </body>
 
-<footer>
-
-</footer>
+  <footer></footer>
 </html>
