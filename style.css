@@ -166,7 +166,7 @@ video {
 }
 
 .museo-info  p {
-   padding: 20px 70px;
+   padding: 30px 80px;
    font-size: 20px;
    font-family: 'Geneva';
    letter-spacing: 1px;
@@ -183,66 +183,80 @@ video {
    width: 65%;
 }
 
-/*section galería
-box-shadow: 0 25px 25px -12px rgb(0 0 0 / 0.4);
-*/
+/*section galería*/
+#Galeria {
+   padding: 40px 0;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
 
-#Galería h2 {
+#Galeria h2 {
    font-size: 50px;
    font-family: 'Unica One';
    font-weight: 500;
    text-align: center;
 }
 
-.expo-card{
-   width: 270px;
-   background: rgb(148, 145, 145); 
-   padding: 25px;
+.container {
+   width: 100%;
+   display: flex;
+   max-width: 1200px;
+}
+
+.card {
+   width: 250px;
+   margin: 20px;
    border-radius: 10px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   gap: 15px;
+   overflow: hidden;
+   background: gray;
+   transition: all 400ms ease;
 }
 
-.expo-card-info{
-   display: flex;
-   flex-direction: column;
-   gap: 5px;
+.card:hover {
+  box-shadow: 6px 6px 20px rgb(0 0 0 / 0.4);
+  transform: scale(1.1);
 }
 
-.card-top {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 10px;
+.card img {
+   width: 100%;
+   height: 290px;
+   object-fit: cover;
+}
+
+.card .contenido {
+   padding: 15px;
+   text-align: center;
+}
+
+.card .contenido h3 {
    font-family: 'Genova';
    font-size: 16px;
    letter-spacing: 1px;
-}
-
-.card-bot {
-   display: flex;
-   justify-content: center;
-}
-
-.btn-g {
-   background-color: var(--primary);
-   border: none;
-   color: var(--secondary);
-   font-size: 14px;
    font-weight: 500;
-   border-radius: 10px;
-   cursor: pointer;
-   padding: 7px 8px;
+   letter-spacing: 1px;
 }
 
-.btn-g:hover {
-   background-color: var(--secondary);
+.card .contenido a {
+   text-decoration: none;
+   display: inline-block;
+   padding: 6px 8px;
+   margin-top: 10px;
+   border: 1px solid var(--secondary);
+   border-radius: 5px;
    color: var(--primary);
+   background: var(--secondary);
+   letter-spacing: 1px;
 }
 
-/*section eventos*/
+.card .contenido a:hover {
+   background: var(--primary);
+   color: var(--secondary);
+}
+
+/*section tickets*/
 #Eventos {
    padding: 40px 0;
    width: 100%;
@@ -257,7 +271,7 @@ box-shadow: 0 25px 25px -12px rgb(0 0 0 / 0.4);
    text-align: center;
 }
 
-/*section contacto/tickets*/
+/*section contacto*/
 #Contacto {
    padding: 40px 0;
    width: 100%;
