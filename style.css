@@ -156,6 +156,7 @@ video {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   max-width: 1200px;
 }
 
 #Museo h2 {
@@ -191,6 +192,7 @@ video {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   max-width: 1200px;
 }
 
 #Galeria h2 {
@@ -257,29 +259,118 @@ video {
 }
 
 /*section tickets*/
-#Eventos {
-   padding: 40px 0;
+
+#tickets {
+   padding: 40px 0px 10px 0px;
    width: 100%;
    display: flex;
    flex-direction: column;
+   max-width: 1200px;
 }
 
-.eventos-info h2 {
+#tickets h2 {
    font-size: 50px;
    font-family: 'Unica One';
    font-weight: 500;
    text-align: center;
 }
 
+.products-container {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   gap: 15px;
+   padding: 30px 0px 10px 0px;
+   max-width: 1200px;
+   width: 100%;
+ }
+ 
+ .products {
+   padding: 20px;
+   border-radius: 15px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   margin-bottom: 20px;
+   width: 100%;
+ }
+ 
+ .product-info {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   gap: 20px;
+   padding: 30px 0px;
+ }
+ 
+ .product-top,
+ .product-mid,
+ .product-bot {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .product-top p,
+ .product-offer p {
+   font-size: 19px;
+   font-weight: 400;
+   color: var(--primary);
+ }
+ 
+ .product-offer {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   gap: 20px;
+ }
+ 
+ .offer {
+   display: flex;
+   gap: 20px;
+   align-items: center;
+   font-weight: 600;
+ }
+ 
+ .btn-buy {
+   background-color: var(--secondary);
+   border: none;
+   padding: 10px 15px;
+   color: var(--bg-white);
+   border-radius: 10px;
+   cursor: pointer;
+ }
+
+ .btn-buy:hover {
+   box-shadow: 6px 6px 20px rgb(0 0 0 / 0.4);
+   transform: scale(1.1);
+ }
+
+ #tickets img {
+   width: 45%;
+   height: 350px;
+   padding: 20px;
+   margin: 0px 20px;
+ }
+
+.linea {
+   width: 60px;
+   border: solid 1px var(--secondary);
+   border-radius: 5px;
+}
+
 /*section contacto*/
+
 #Contacto {
-   padding: 40px 0;
+   padding: 10px 0;
    width: 100%;
    display: flex;
    flex-direction: column;
+   max-width: 1200px;
 }
 
-.contacto-info h2 {
+#Contacto h2 {
    font-size: 50px;
    font-family: 'Unica One';
    font-weight: 500;
