@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400&family=Trykker&family=Unica+One&display=swap');
 
 :root {
     /*bg colors*/
@@ -8,6 +8,10 @@
     --txtgrey:#64696b;
     /*decorations*/
     --secondary: #FBAE17;
+
+    --color1: #ff8906;
+    --color2:#a7a9be;
+    --color3:#e53170;
 }
 
  *{
@@ -17,7 +21,7 @@
     text-decoration: none;
     list-style: none;
     color: var(--primary);
-    font-family: 'Geneva';
+    font-family: 'Maitree';
  }
 
  body {
@@ -33,7 +37,7 @@
     align-items: center;
     height: 70px;
     padding: 0px 30px;
-    position: fixed;
+    position: absolute;
     top: 0;
  }
 
@@ -131,17 +135,16 @@ video {
    min-width: 500px;
    font-weight: 500;
    text-align: center;
+   font-family: 'Trykker';
 }
 
 .hero-info a {
    color: var(--primary);
    width: 145px;
-   padding: 8px 0px;
+   padding: 8px 1px;
    border: 1px solid #f2f2f2;
    border-radius: 5px;
    font-size: 16px;
-   /*fontfamily a definir*/
-   letter-spacing: 1px;
    text-align: center;
    background: transparent;
 }
@@ -152,7 +155,7 @@ video {
 }
 
 /*section museo*/
-#Museo {
+#museo {
    padding: 40px 0;
    width: 100%;
    display: flex;
@@ -162,7 +165,7 @@ video {
    max-width: 1200px;
 }
 
-#Museo h2 {
+#museo h2 {
    font-size: 50px;
    font-family: 'Unica One';
    font-weight: 500;
@@ -170,10 +173,11 @@ video {
 }
 
 .museo-info  p {
-   padding: 30px 80px;
+   padding: 30px 60px;
    font-size: 20px;
    letter-spacing: 1px;
    text-align: center;
+   color: #c5c7e2;
 }
 
 .museo-img {
@@ -187,7 +191,7 @@ video {
 }
 
 /*section galería*/
-#Galeria {
+#galeria {
    padding: 40px 0;
    width: 100%;
    display: flex;
@@ -197,7 +201,7 @@ video {
    max-width: 1200px;
 }
 
-#Galeria h2 {
+#galeria h2 {
    font-size: 50px;
    font-family: 'Unica One';
    font-weight: 500;
@@ -236,7 +240,7 @@ video {
 }
 
 .card .contenido h3 {
-   font-family: 'Genova';
+   font-family: 'Trykker';
    font-size: 16px;
    letter-spacing: 1px;
    font-weight: 500;
@@ -363,8 +367,7 @@ video {
 }
 
 /*section contacto*/
-
-#Contacto {
+#contacto {
    padding: 10px 0;
    width: 100%;
    display: flex;
@@ -372,7 +375,7 @@ video {
    max-width: 1200px;
 }
 
-#Contacto h2 {
+#contacto h2 {
    font-size: 50px;
    font-family: 'Unica One';
    font-weight: 500;
@@ -416,7 +419,6 @@ video {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   gap: 10px;
    padding: 10px 10px;
  }
 
@@ -455,8 +457,16 @@ video {
    width: 25px;
 }
 
-.social-media:hover {
-   transform: scale(1.1);   
+.social-media button {
+   border: none;
+   background:whitesmoke;
+   border-radius: 5px;
+   padding: 2px;
+   cursor: pointer;
+}
+
+.social-media button:hover {
+   transform: scale(1.1);
 }
 
 /*section contacto (mapa)*/
