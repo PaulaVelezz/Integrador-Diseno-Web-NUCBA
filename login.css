@@ -82,7 +82,7 @@ body {
 }
 
 .login-container{
-    background-image: url(./assets/layered-waves-haikei.png);
+    background-image: url(./assets/login\ -waves.png);
     background-repeat: no-repeat;
     height: 380px;
     background-position: center;
@@ -175,4 +175,49 @@ body {
 
 .text button:hover{
     transform: scale(1.1);
+}
+
+/* register section*/
+
+.box-register{
+    width: 100%;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    max-width: 1200px;
+}
+
+.register-container{
+    height: 400px; 
+    width: 680px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 40px;
+    max-width: 1200px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.6);
+}
+
+.register-container{
+    background-image: url(./assets/register\ -waves.png);
+    background-repeat: no-repeat;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+
+.register-form{
+    padding: 10px;
+    margin-top: 40px;
+}
+
+form h3 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
 }
