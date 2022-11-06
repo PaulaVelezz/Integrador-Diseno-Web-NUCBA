@@ -5,55 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://kit.fontawesome.com/6ff66d206f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <a href="#"><img src="./assets/logo bw.png" class="logo" /></a>
+      <img src="./assets/logo bw.png" alt="logo museo" class="logo"/>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><a href="./index.html">Inicio</a></li>
+          <span class="nav-list-divider"></span> 
+          <li><a href="#museo">Museo</a></li>
+          <span class="nav-list-divider"></span> 
+          <li><a href="#galeria">Galería</a></li>
+          <span class="nav-list-divider"></span> 
+          <li><a href="#contacto">Contacto</a></li>
+          <span class="nav-list-divider"></span> 
+          <li><a href="./login.html">Ingresar <i class="fa-regular fa-user"></i></a></li>
+        </ul>
+        <a href="#tickets"
+          ><img src="./assets/ticket(2).png" alt="tickets" class="ticket-icon"
+        /></a>
+      </nav>
       </header>
-  
-      <section id="register">
-        <div class="box-register">
-          <div class="register-container">
-            <form action="#">
-              <div class="form-content">
-                <div class="register-form">
-                  <h3>Register</h3>
-                  <div class="input-boxes">
-                    <div class="input-box">
+
+    <section id="register">
+        <div class="contenedor-register">
+            <div class="register-bg">
+            </div>
+              <form action="#">
+                <div class="register">
+                  <div class="register-form">
+                  <h3>Registrate</h3>
+                  <div class="rg-input-boxes">
+                    <div class="rg-input-box">
                       <input
                         type="text"
-                        placeholder="Enter your name"
+                        placeholder="Ingresa tu nombre"
                         required
                       />
                     </div>
-                    <div class="input-box">
+                    <div class="rg-input-box">
                         <input
                           type="text"
-                          placeholder="Enter your email"
+                          placeholder="Ingresa tu e-mail"
                           required
                         />
                       </div>
-                    <div class="input-box">
+                    <div class="rg-input-box">
                       <input
                         type="password"
-                        placeholder="Create a password"
+                        placeholder="Crea tu contraseña"
                         required
                       />
                     </div>
-                    <div class="button-input-box">
-                      <button type="submit">Submit</button>
+
+                    <div class="tyc">
+                      <label><input type="checkbox" />He leído y acepto los <span>terminos y condiciones</span></label>
+                      </div>
+
+                    <div class="button-rg-input-box">
+                      <button type="submit">Crea tu cuenta</button>
                     </div>
                     <div class="text">
-                      Already have an account?
-                      <button type="submit">Login Now</button>
+                      <p>Ya tienes una cuenta?</p> 
+                      <a href="./login.html">Inicia sesión</a>
                     </div>
                   </div>
                 </div>
-              </div>
+            </div>
             </form>
           </div>
-        </div>
-      </section>
+  </section>
 </body>
+<footer>
+  <span class="separador"></span>
+  <p><div id="copyright">Copyright&copy; 2022 - Creado por <span>Paula Velez</span></div></span> para <span>NUCBA</span></p>
+</footer>
 </html>

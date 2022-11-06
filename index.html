@@ -7,17 +7,22 @@
     <title>Museo E.C</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://kit.fontawesome.com/6ff66d206f.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <img src="./assets/logo bw.png" alt="logo museo" class="logo" />
       <nav class="navbar">
         <ul class="navbar-list">
-          <li><a href="#hero">Home</a></li>
+          <li><a href="#hero">Inicio</a></li>
+          <span class="nav-list-divider"></span> 
           <li><a href="#museo">Museo</a></li>
+          <span class="nav-list-divider"></span> 
           <li><a href="#galeria">Galería</a></li>
+          <span class="nav-list-divider"></span> 
           <li><a href="#contacto">Contacto</a></li>
-          <li><a href="#">Login</a></li>
+          <span class="nav-list-divider"></span> 
+          <li><a href="./login.html">Ingresar <i class="fa-regular fa-user"></i></a></li>
         </ul>
         <a href="#tickets"
           ><img src="./assets/ticket(2).png" alt="tickets" class="ticket-icon"
@@ -28,8 +33,8 @@
       <!-- hero -->
       <section id="hero">
         <div class="hero-info">
-          <h1>Welcome to The E.C. Museum</h1>
-          <a href="#">Reserva tu visita</a>
+          <h1>Bienvenidos a E.C. Museo</h1>
+          <a href="#">Reservá tu visita</a>
         </div>
         <video muted autoplay loop>
           <source src="./assets/video 2.mp4" type="video/mp4" />
@@ -64,21 +69,21 @@
           <img src="assets/DP146455.jpg" />
           <div class="contenido">
             <h3>Exposición 2022</h3>
-            <a href="#">Ver más</a>
+            <a href="#">Ver más <i class="fa-solid fa-chevron-right"></i></a>
           </div>
         </div>
         <div class="card">
           <img src="assets/DP356133.jpg" />
           <div class="contenido">
             <h3>Exposición 2021</h3>
-            <a href="#">Ver más</a>
+            <a href="#">Ver más <i class="fa-solid fa-chevron-right"></i></a>
           </div>
         </div>
         <div class="card">
           <img src="assets/young_woman_with_peonies_1983.1.6.jpg" />
           <div class="contenido">
             <h3>Exposición 2020</h3>
-            <a href="#">Ver más</a>
+            <a href="#">Ver más <i class="fa-solid fa-chevron-right"></i></a>
           </div>
         </div>
         <div class="card">
@@ -87,9 +92,12 @@
           />
           <div class="contenido">
             <h3>Exposición 2019</h3>
-            <a href="#">Ver más</a>
+            <a href="#">Ver más <i class="fa-solid fa-chevron-right"></i></a>
           </div>
         </div>
+      </div>
+      <div class="btn-vm">
+        <button type="button"> Ver más exposiciones <i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i></button>
       </div>
 
       <!-- section tickets -->
@@ -149,15 +157,15 @@
             <h4>Horarios</h4>
             <p>De Martes a Domingos y feriados de 10hs a 19hs.</p>
             <div class="info-gral">
-              <ul>
+              <ul class="lista-info">
                 <li>
-                  <p>Dirección: Calle falsa 123</p>
+                  <p><i class="fa-solid fa-location-dot"></i> Dirección: Calle falsa 123</p>
                 </li>
                 <li>
-                  <p>Telefono: 358-15454545</p>
+                  <p><i class="fa-solid fa-phone"></i> Teléfono: (358)-15454545</p>
                 </li>
                 <li>
-                  <p>Mail: museo@mail.com</p>
+                  <p><i class="fa-solid fa-envelope"></i> Mail: ECmuseo@mail.com</p>
                 </li>
               </ul>
               <!-- section contacto-redes -->
@@ -187,6 +195,6 @@
   </body>
   <footer>
     <span class="separador"></span>
-    <p>Creado por <span>Paula Velez</span> para <span>NUCBA</span></p>
+    <p><div id="copyright">Copyright&copy; 2022 - Creado por <span>Paula Velez</span></div></span> para <span>NUCBA</span></p>
   </footer>
 </html>

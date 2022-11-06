@@ -5,48 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://kit.fontawesome.com/6ff66d206f.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      <a href="#"><img src="./assets/logo bw.png" class="logo" /></a>
+      <img src="./assets/logo bw.png" alt="logo museo" class="logo"/>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><a href="./index.html">Inicio</a></li>
+          <span class="nav-list-divider"></span> 
+          <li><a href="#museo">Museo</a></li>
+          <span class="nav-list-divider"></span> 
+          <li><a href="#galeria">Galería</a></li>
+          <span class="nav-list-divider"></span> 
+          <li><a href="#contacto">Contacto</a></li>
+          <span class="nav-list-divider"></span> 
+          <li><a href="./login.html">Ingresar <i class="fa-regular fa-user"></i></a></li>
+        </ul>
+        <a href="#tickets"
+          ><img src="./assets/ticket(2).png" alt="tickets" class="ticket-icon"
+        /></a>
+      </nav>
     </header>
 
     <section id="login">
-      <div class="box-login">
-        <div class="login-container">
+      <div class="contenedor-login">
+        <div class="iniciar">
           <form action="#">
             <div class="form-content">
               <div class="login-form">
-                <h2>Login</h2>
+                <h3>Ingresa para ver tus reservas</h3>
                 <div class="input-boxes">
                   <div class="input-box">
                     <input
                       type="text"
-                      placeholder="Enter your email"
+                      placeholder="Ingresa tu e-mail"
                       required
                     />
                   </div>
                   <div class="input-box">
                     <input
                       type="password"
-                      placeholder="Enter your password"
+                      placeholder="Ingresa tu contraseña"
                       required
                     />
+                  </div>  
+
+                  <div class="remember">
+                  <label><input type="checkbox" />Recuerdame</label>
+                  </div>
+
                   </div>
                   <div class="button-input-box">
-                    <button type="submit">Submit</button>
+                    <button type="submit">Iniciar sesión</button>
                   </div>
                   <div class="text">
-                    Don't have an account?
-                    <button type="submit">Register Now</button>
+                    <p> Aún no tienes una cuenta?</p>
+                    <a href="./register.html">Registrate ahora</a>
                   </div>
                 </div>
               </div>
             </div>
           </form>
         </div>
+        <div class="login-bg">
       </div>
+    </div>
     </section>
   </body>
+  <footer>
+    <span class="separador"></span>
+    <p><div id="copyright">Copyright&copy; 2022 - Creado por <span>Paula Velez</span></div></span> para <span>NUCBA</span></p>
+  </footer>
 </html>
