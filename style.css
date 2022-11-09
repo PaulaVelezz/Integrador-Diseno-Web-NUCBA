@@ -11,6 +11,10 @@
     --color1: #ff8906;
     --color2:#a7a9be;
     --color3: #f14d4d;
+    --amarillosecond:#DFB755;
+    --negrosecond:#242424;
+    --blancosecond:#F0EEE1;
+
 }
 
  *{
@@ -29,56 +33,63 @@
 
  /*header*/
  header{
-    background: var(--background);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    padding: 0px 30px;
-    position: absolute;
-    top: 0;
- }
-
- .logo {
-    height: 100%;
-    width: auto;
- }
-
- .logo:hover{
-   transform: scale(1.1);
- }
-
-.navbar, .navbar-list {
    display: flex;
-   gap: 20px;
+   justify-content: space-between;
    align-items: center;
+   padding: 30px 10%;
+   background: var(--background);
+   width: 100%;
+   height: 70px;
+   position: absolute;
+   top: 0;
 }
 
- .navbar-list a {
-    font-size: 18px;
-    font-family: 'Unica One';
- }
-
-.navbar{
-   gap: 40px;
+.logo {
+   width: 100px
 }
 
- .nav-list-divider {
+.logo:hover{
+   transform: scale(1.1);
+}
+
+.nav__links li {
+   display: inline-block;
+   padding: 0px 20px;
+}
+ 
+.nav__links li a {
+   transition: all 0.3s ease 0s;
+   font-family: 'Unica One';
+   font-size: 18px;
+}
+
+.nav__links li a:hover{
+   color: var(--amarillosecond);
+}
+
+.nav-list-divider {
    border-right: 1px solid var(--color2);
    opacity: 0.5;
    height: 20px;
- }
-
- .ticket-icon {  
-    height: 60px;
-    cursor: pointer;
- }
-
- .ticket-icon:hover {  
-   transform: scale(1.1);
 }
 
+.ticket-icon:hover {  
+  transform: scale(1.1);
+}
+
+.ticket-icon button {
+   text-decoration: none;
+   font-size: 18px;
+   font-family: 'Unica One';
+   background: transparent;
+   border: none;
+   cursor: pointer;
+}
+
+.ticket-icon button i {
+color: var(--amarillosecond);
+}
+ 
 main {
    display: flex;
    flex-direction: column;
@@ -256,7 +267,7 @@ video {
    border: 1px;
    border-radius: 5px;
    color: var(--primary);
-   background:var(--color3);
+   background:var(--amarillosecond);
    letter-spacing: 1px;
 }
 
@@ -286,8 +297,8 @@ video {
 
 .btn-vm button:hover{
    color: var(--primary);
-   background: var(--color3);
-   border: 1px solid var(--color3);
+   background: var(--amarillosecond);
+   border: 1px solid var(--amarillosecond);
 }
 
 .btn-vm {
@@ -371,7 +382,7 @@ video {
  }
  
  .btn-buy {
-   background-color: var(--color3);
+   background-color: var(--amarillosecond);
    border: none;
    padding: 10px 15px;
    color: var(--bg-white);
@@ -551,7 +562,7 @@ footer span {
 
 footer .separador {
    width: 100%;
-   border: solid var(--color3) 1px;
+   border: solid var(--amarillosecond) 1px;
 }
 
 /*scrollbar*/
