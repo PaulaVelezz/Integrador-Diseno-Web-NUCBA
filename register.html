@@ -10,25 +10,23 @@
     <script src="https://kit.fontawesome.com/6ff66d206f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-      <img src="./assets/logo bw.png" alt="logo museo" class="logo"/>
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li><a href="./index.html">Inicio</a></li>
-          <span class="nav-list-divider"></span> 
-          <li><a href="#museo">Museo</a></li>
-          <span class="nav-list-divider"></span> 
-          <li><a href="#galeria">Galería</a></li>
-          <span class="nav-list-divider"></span> 
-          <li><a href="#contacto">Contacto</a></li>
-          <span class="nav-list-divider"></span> 
-          <li><a href="./login.html">Ingresar <i class="fa-regular fa-user"></i></a></li>
-        </ul>
-        <a href="#tickets"
-          ><img src="./assets/ticket(2).png" alt="tickets" class="ticket-icon"
-        /></a>
-      </nav>
-      </header>
+  <header>
+    <img class="logo" src="./assets/ec-logo.png" alt="logo museo"/>
+    <nav>
+      <ul class="nav__links">
+        <li><a href="./index.html">Inicio</a></li>
+        <span class="nav-list-divider"></span> 
+        <li><a href="#museo">Museo</a></li>
+        <span class="nav-list-divider"></span> 
+        <li><a href="#galeria">Galería</a></li>
+        <span class="nav-list-divider"></span> 
+        <li><a href="#contacto">Contacto</a></li>
+        <span class="nav-list-divider"></span> 
+        <li><a href="./login.html">Ingresar <i class="fa-regular fa-user"></i></a></li>
+      </ul>
+    </nav>
+    <a class="ticket-icon" href="#tickets"><button>Tickets <i class="fa-solid fa-ticket"></i></button></a>
+  </header>
 
     <section id="register">
         <div class="contenedor-register">
@@ -39,6 +37,8 @@
                   <div class="register-form">
                   <h3>Registrate</h3>
                   <div class="rg-input-boxes">
+
+                  <div class="box-1">
                     <div class="rg-input-box">
                       <input
                         type="text"
@@ -60,14 +60,18 @@
                         required
                       />
                     </div>
+                  </div>
 
+                  <div class="box-2">
                     <div class="tyc">
-                      <label><input type="checkbox" />He leído y acepto los <span>terminos y condiciones</span></label>
+                      <label><input type="checkbox"/> He leído y acepto los <span>terminos y condiciones</span></label>
                       </div>
 
                     <div class="button-rg-input-box">
                       <button type="submit">Crea tu cuenta</button>
                     </div>
+                  </div>
+
                     <div class="text">
                       <p>Ya tienes una cuenta?</p> 
                       <a href="./login.html">Inicia sesión</a>

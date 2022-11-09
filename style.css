@@ -13,8 +13,6 @@
     --color3: #f14d4d;
     --amarillosecond:#DFB755;
     --negrosecond:#242424;
-    --blancosecond:#F0EEE1;
-
 }
 
  *{
@@ -25,14 +23,14 @@
     list-style: none;
     color: var(--primary);
     font-family: 'Maitree';
- }
+}
 
- body {
+body {
    background: var(--background);
- }
+}
 
- /*header*/
- header{
+/*header*/
+header{
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -332,9 +330,9 @@ video {
    padding: 30px 0px 10px 0px;
    max-width: 1200px;
    width: 100%;
- }
+}
  
- .products {
+.products {
    padding: 20px;
    border-radius: 15px;
    display: flex;
@@ -342,46 +340,46 @@ video {
    justify-content: space-around;
    margin-bottom: 20px;
    width: 100%;
- }
+}
  
- .product-info {
+.product-info {
    display: flex;
    flex-direction: column;
    justify-content: space-evenly;
    gap: 20px;
    padding: 30px 0px;
- }
+}
  
- .product-top,
- .product-mid,
- .product-bot {
+.product-top,
+.product-mid,
+.product-bot {
    display: flex;
    justify-content: space-between;
    align-items: center;
- }
+}
 
- .product-top p,
- .product-offer p {
+.product-top p,
+.product-offer p {
    font-size: 19px;
    font-weight: 400;
    color: var(--primary);
- }
+}
  
- .product-offer {
+.product-offer {
    display: flex;
    justify-content: space-between;
    width: 100%;
    gap: 20px;
- }
+}
  
- .offer {
+.offer {
    display: flex;
    gap: 20px;
    align-items: center;
    font-weight: 600;
- }
+}
  
- .btn-buy {
+.btn-buy {
    background-color: var(--amarillosecond);
    border: none;
    padding: 10px 15px;
@@ -390,19 +388,19 @@ video {
    cursor: pointer;
    font-size: 15px;
    letter-spacing: 1px;
- }
+}
 
- .btn-buy:hover {
+.btn-buy:hover {
    box-shadow: 6px 6px 20px rgb(0 0 0 / 0.4);
    transform: scale(1.1);
- }
+}
 
- #tickets img {
+#tickets img {
    width: 45%;
    height: 350px;
    padding: 20px;
    margin: 0px 20px;
- }
+}
 
 .linea {
    width: 60px;
@@ -437,9 +435,9 @@ video {
    width: 100%;
    height: 400px;
    margin: 10px;
- }
+}
 
- .contactInfo {
+.contactInfo {
    padding: 20px;
    border-radius: 15px;
    display: flex;
@@ -447,56 +445,57 @@ video {
    margin-bottom: 20px;
    width: 100%;
    height: 350px;
- }
+}
 
- .contactInfo h4 {
+.contactInfo h4 {
    font-size: 40px;
    font-family: 'Unica One';
    font-weight: 500;
    text-align: center;
    letter-spacing: 1px;
 }
- .info-horarios{
+
+.info-horarios{
    display: flex;
    flex-direction: column;
    justify-content: center;
    padding: 10px 10px;
- }
+}
 
- .info-horarios p { 
+.info-horarios p { 
    color: var(--primary);
- }
+}
 
- .info-gral {
+.info-gral {
    display: flex;
    flex-direction: column;
    gap: 20px;
    padding: 27px 0px;
    margin: 10px;
- }
+}
 
- .info-gral p {
+.info-gral p {
    font-size: 16px;
    font-weight: 300;
    text-align: center;
    letter-spacing: 1px;
- }
+}
 
- .info-gral h4 {
+.info-gral h4 {
    font-size: 18px;
    font-family: 'Unica One';
    text-align: center;
    letter-spacing: 1px;
- }
+}
 
- .lista-info i {
+.lista-info i {
    font-size: 17px;
    align-self: center;
    margin: 10px 5px;
- }
+}
 
 /*section redes sociales*/
- .social-media {
+.social-media {
    display: flex;
    justify-content: center;
    gap: 20px;
@@ -604,14 +603,14 @@ html {
 }
 
 .iniciar {
-   height: 100%;
-   width: 100%;
+   height: 85vh;
+   width: 30vw;
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
    gap: 20px;
-   border-right: solid 2px  #242536;
+   border-right: solid 2px #242536;
 }
 
 .login-bg {
@@ -677,7 +676,7 @@ html {
    display: flex;
    justify-content: center;
    margin-top: 10px;
-   padding: 5px;
+   padding: 5px 50px;
 }
 
 .text a:hover{
@@ -692,7 +691,7 @@ html {
    text-indent: 8px;
    display: flex;
    justify-content: center;
- }
+}
 
 /*register*/
 
@@ -716,16 +715,12 @@ html {
 }
 
 .register {
-   height: 100%;
-   width: 100%;
+   border-left: 2px solid #242536;
+   height: 85vh;
+   width: 30vw;
    display: flex;
    flex-direction: column;
-   align-items: flex-start;
-   justify-content: center;
-   gap: 20px;
-   border-left: solid 2px rgb(21, 0, 59);
-   padding: 70px;
-   margin: 3px;
+   padding: 35px;
 }
 
 .register-bg{
@@ -750,9 +745,25 @@ html {
    font-size: 25px; 
    font-weight: 800;
    letter-spacing: 1px;
-   margin-bottom: 20px;
    padding: 10px;
    text-align: center;
+}
+
+.box-1 {
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.box-2 {
+   padding: 5px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 5px;
 }
 
 .rg-input-box input {
@@ -774,6 +785,15 @@ html {
    font-size: 15px;
 }
 
+.tyc {
+   display: flex;
+   align-items: center;
+   height: 60px;
+   width: 230px;
+   padding: 22px;
+   margin: 5px;
+}
+
 .tyc span{
    color: #f14d4d;
 }
@@ -781,7 +801,6 @@ html {
 .tyc label{
    vertical-align: middle;
    color: #1B1A1A;
-   
 }
 
 .text p {
