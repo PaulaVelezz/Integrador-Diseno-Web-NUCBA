@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400&family=Trykker&family=Unica+One&display=swap');
 
 :root {
-    /*bg colors*/
+   /*bg colors*/
     --background:#1B1A1A;
-    /*text colors*/
+   /*text colors*/
     --primary: #ffffffde;
     --txtgrey:#64696b;
    /*deco*/
@@ -15,14 +15,14 @@
     --negrosecond:#242424;
 }
 
- *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    color: var(--primary);
-    font-family: 'Maitree';
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   list-style: none;
+   color: var(--primary);
+   font-family: 'Maitree';
 }
 
 body {
@@ -87,7 +87,19 @@ header{
 .ticket-icon button i {
 color: var(--amarillosecond);
 }
- 
+
+/*menu hamburguesa*/
+.btn-bar i {
+   font-size: 20px;
+   cursor: pointer;
+   display: none;
+}
+
+#toggle-menu {
+   display: none;
+}
+
+
 main {
    display: flex;
    flex-direction: column;
@@ -807,3 +819,5 @@ html {
    color: #1B1A1A;
    text-align: center;
 }
+
+
