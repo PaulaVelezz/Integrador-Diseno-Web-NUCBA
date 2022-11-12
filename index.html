@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="image/png" sizes="32x32" rel="icon" href="./assets/icons8-museo-32.png">
     <title>Museo E.C</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
@@ -155,50 +156,72 @@
       <!-- section contacto -->
       <section id="contacto">
         <h2>Contacto</h2>
-        <div class="contact-container">
-          <div class="contactInfo">
-            <div class="info-horarios">
-            <h4>Horarios</h4>
-            <p>De Martes a Domingos y feriados de 10hs a 19hs.</p>
-            <div class="info-gral">
-              <ul class="lista-info">
-                <li>
-                  <p><i class="fa-solid fa-location-dot"></i> Dirección: Calle falsa 123</p>
-                </li>
-                <li>
-                  <p><i class="fa-solid fa-phone"></i> Teléfono: (358)-15454545</p>
-                </li>
-                <li>
-                  <p><i class="fa-solid fa-envelope"></i> Mail: ECmuseo@mail.com</p>
-                </li>
-              </ul>
-              <!-- section contacto-redes -->
-              <h4>Seguinos en nuestras redes</h4>
-              <div class="social-media">
-                <button><img src="./assets/ig logo.png" alt="Instagram"/></button>
-                <button><img src="./assets/fb logo.png" alt="Facebook"/></button>
-                <button><img src="./assets/wpp.png" alt="Whatsapp"/></button>
-            </div>
-            </div>
-            </div>
-            
-            <!-- section contacto-mapa -->
-            <div class="contactMap">
-              <h4>Ubicación</h4>
-              <div class="map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32392.505862546128!2d-64.19564154332299!3d-31.418458108462413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1664386748040!5m2!1ses-419!2sar"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+        <div class="contact__container">
+          <div class="contact__info">
+          <h4>Horarios</h4>
+          <p>De Martes a Domingos y feriados de 10hs a 19hs.</p>
+          <div class="container__inputs">
+              <div class="container__contact__input">
+                <p><i class="fa-solid fa-location-dot"></i> Dirección: Av. Calle Falsa 1234</p>
               </div>
-            </div>
+              <div class="container__contact__input">
+                <p><i class="fa-solid fa-phone"></i> Teléfono: (358)-15454545</p>
+              </div>
+              <div class="container__contact__input">
+                <p><i class="fa-solid fa-envelope"></i> Mail: ECmuseo@mail.com</p>
+              </div>
+          </div>   
+          </div>
+          <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32392.505862546128!2d-64.19564154332299!3d-31.418458108462413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1664386748040!5m2!1ses-419!2sar"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          </div>
+      </div>
       </section>
     </main>
   </body>
   <footer>
-    <span class="separador"></span>
-    <p><div id="copyright">Copyright&copy; 2022 - Creado por <span>Paula Velez</span></div></span> para <span>NUCBA</span></p>
+    <div class="grupo-1">
+      <div class="box__footer">
+        <figure>
+          <a href="#hero"><img class="footer__logo" src="./assets/ec-logo.png" alt="logo museo"/></a>
+        </figure>
+      </div>
+      <div class="box__footer">
+          <nav>
+              <ul class="ul__footer">
+                <li><a href="#hero">Inicio</a></li>
+                  <li><a href="#museo">Museo</a></li>
+                  <li><a href="#galeria">Galería</a></li>
+                  <li><a href="#tickets">Tickets</a></li>
+                  <li><a href="#contacto">Contacto</a></li>
+              </ul>
+          </nav>
+      </div>
+      <div class="box__footer">
+        <h3>Acerca de</h3>
+        <p>Información de entradas</p>
+        <p>Políticas de privacidad</p>
+        <p>Términos y condiciones</p>
+      </div>
+      <div class="box__footer">
+        <h2>SEGUINOS EN NUESTRAS REDES</h2>
+        <div class="red-social">
+          <a href="#" class="footer__social__icons"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="footer__social__icons"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="footer__social__icons"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" class="footer__social__icons"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="footer__social__icons"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+
+        <small>&copy; 2022 <a class="footer__author" href="https://github.com/PaulaVelezz" target="_blank">Paula Velez</a> para <span>NUCBA</span> - Todos los Derechos Reservados.</small>
+        
+      </div>
+    </div>
+    
   </footer>
 </html>
