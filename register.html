@@ -1,43 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href="./assets/icons8-museo-32.png"
+    />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <script src="https://kit.fontawesome.com/6ff66d206f.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <header>
-    <img class="logo" src="./assets/ec-logo.png" alt="logo museo"/>
-    <nav>
-      <ul class="nav__links">
-        <li><a href="./index.html">Inicio</a></li>
-        <span class="nav-list-divider"></span> 
-        <li><a href="#museo">Museo</a></li>
-        <span class="nav-list-divider"></span> 
-        <li><a href="#galeria">Galería</a></li>
-        <span class="nav-list-divider"></span> 
-        <li><a href="#contacto">Contacto</a></li>
-        <span class="nav-list-divider"></span> 
-        <li><a href="./login.html">Ingresar <i class="fa-regular fa-user"></i></a></li>
-      </ul>
-    </nav>
-    <a class="ticket-icon" href="#tickets"><button>Tickets <i class="fa-solid fa-ticket"></i></button></a>
-  </header>
+    <script
+      src="https://kit.fontawesome.com/6ff66d206f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./assets/ec-logo.png" alt="logo museo" />
+      <nav class="navbar">
+        <!-- menu hamburguesa -->
+        <label for="toggle-menu" class="btn-bar">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="toggle-menu" />
+        <ul class="nav__links">
+          <li><a href="./index.html">Inicio</a></li>
+          <span class="nav-list-divider"></span>
+          <li><a href="#museo">Museo</a></li>
+          <span class="nav-list-divider"></span>
+          <li><a href="#galeria">Galería</a></li>
+          <span class="nav-list-divider"></span>
+          <li><a href="#contacto">Contacto</a></li>
+          <span class="nav-list-divider"></span>
+          <li>
+            <a href="./login.html"
+              >Ingresar <i class="fa-regular fa-user"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <a class="ticket-icon" href="#tickets"
+        ><button>Tickets <i class="fa-solid fa-ticket"></i></button
+      ></a>
+    </header>
 
-    <section id="register">
-        <div class="contenedor-register">
-            <div class="register-bg">
+    <main>
+      <div class="rg_container">
+        <div class="rg_box">
+          <div class="rg_left"></div>
+          <div class="right">
+            <h3>Registrate</h3>
+            <input
+              type="text"
+              class="log_input"
+              placeholder="Ingresa tu nombre"
+              required
+            />
+            <input
+              type="text"
+              class="log_input"
+              placeholder="Ingresa tu e-mail"
+              required
+            />
+            <input
+              type="password"
+              class="log_input"
+              placeholder="Crea tu contraseña"
+              required
+            />
+            <div class="tyc">
+              <label> <input type="checkbox"/> He leído y acepto los
+              <span>terminos y condiciones</span> </label>
             </div>
-              <form action="#">
-                <div class="register">
-                  <div class="register-form">
-                  <h3>Registrate</h3>
-                  <div class="rg-input-boxes">
+            <div class="btn_log">
+              <button type="submit">Iniciar sesión</button>
+            </div>
 
+            <p>Ya tienes una cuenta?</p>
+            <a href="./login.html">Inicia sesión</a>
+          </div>
+        </div>
+      </div>
+      <!--  
+      <section id="register">
+        <div class="contenedor-register">
+          <div class="register-bg"></div>
+          <form action="#">
+            <div class="register">
+              <div class="register-form">
+                <h3>Registrate</h3>
+                <div class="rg-input-boxes">
                   <div class="box-1">
                     <div class="rg-input-box">
                       <input
@@ -47,12 +103,12 @@
                       />
                     </div>
                     <div class="rg-input-box">
-                        <input
-                          type="text"
-                          placeholder="Ingresa tu e-mail"
-                          required
-                        />
-                      </div>
+                      <input
+                        type="text"
+                        placeholder="Ingresa tu e-mail"
+                        required
+                      />
+                    </div>
                     <div class="rg-input-box">
                       <input
                         type="password"
@@ -64,60 +120,89 @@
 
                   <div class="box-2">
                     <div class="tyc">
-                      <label><input type="checkbox"/> He leído y acepto los <span>terminos y condiciones</span></label>
-                      </div>
+                      <label
+                        ><input type="checkbox" /> He leído y acepto los
+                        <span>terminos y condiciones</span></label
+                      >
+                    </div>
 
                     <div class="button-rg-input-box">
                       <button type="submit">Crea tu cuenta</button>
                     </div>
                   </div>
 
-                    <div class="text">
-                      <p>Ya tienes una cuenta?</p> 
-                      <a href="./login.html">Inicia sesión</a>
-                    </div>
+                  <div class="text">
+                    <p>Ya tienes una cuenta?</p>
+                    <a href="./login.html">Inicia sesión</a>
                   </div>
                 </div>
+              </div>
             </div>
-            </form>
-          </div>
-  </section>
-</body>
-<footer>
-  <div class="grupo-1">
-    <div class="box__footer">
-      <figure>
-        <a href="#hero"><img class="footer__logo" src="./assets/ec-logo.png" alt="logo museo"/></a>
-      </figure>
-    </div>
-    <div class="box__footer">
-        <nav>
-            <ul class="ul__footer">
-              <li><a href="#hero">Inicio</a></li>
-                <li><a href="#museo">Museo</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#tickets">Tickets</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="box__footer">
-      <h3>Acerca de</h3>
-      <p>Información de entradas</p>
-      <p>Políticas de privacidad</p>
-      <p>Términos y condiciones</p>
-    </div>
-    <div class="box__footer">
-      <h2>SEGUINOS EN NUESTRAS REDES</h2>
-      <div class="red-social">
-        <a href="#" class="footer__social__icons"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#" class="footer__social__icons"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#" class="footer__social__icons"><i class="fa-brands fa-tiktok"></i></a>
-        <a href="#" class="footer__social__icons"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" class="footer__social__icons"><i class="fa-brands fa-linkedin-in"></i></a>
+          </form>
+        </div>
+      </section> 
+      -->
+    </main>
+  </body>
+  <footer>
+    <div class="grupo-1">
+      <div class="box__footer">
+        <figure>
+          <a href="#hero"
+            ><img
+              class="footer__logo"
+              src="./assets/ec-logo.png"
+              alt="logo museo"
+          /></a>
+        </figure>
       </div>
-      <small>&copy; 2022 <a class="footer__author" href="https://github.com/PaulaVelezz" target="_blank">Paula Velez</a> para <span>NUCBA</span> - Todos los Derechos Reservados.</small>
+      <div class="box__footer">
+        <nav>
+          <ul class="ul__footer">
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#museo">Museo</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#tickets">Tickets</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="box__footer">
+        <h3>Acerca de</h3>
+        <p>Información de entradas</p>
+        <p>Políticas de privacidad</p>
+        <p>Términos y condiciones</p>
+      </div>
+      <div class="box__footer">
+        <h2>SEGUINOS EN NUESTRAS REDES</h2>
+        <div class="red-social">
+          <a href="#" class="footer__social__icons"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="#" class="footer__social__icons"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="#" class="footer__social__icons"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
+          <a href="#" class="footer__social__icons"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" class="footer__social__icons"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </div>
+        <small
+          >&copy; 2022
+          <a
+            class="footer__author"
+            href="https://github.com/PaulaVelezz"
+            target="_blank"
+            >Paula Velez</a
+          >
+          para <span>NUCBA</span> - Todos los Derechos Reservados.</small
+        >
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 </html>

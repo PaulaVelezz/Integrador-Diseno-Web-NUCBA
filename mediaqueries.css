@@ -73,12 +73,97 @@
     #contacto h2 {
     font-size: 43px;
     }
+
+    .mapa {
+        display: none;
+    }
+
+    .contact__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 /*section footer*/
     .grupo-1{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
         padding: 35px 0px;
-     }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box__footer h3{
+       text-align:  center;
+       margin-top: 10px;
+    }
+    .box__footer h2{
+        margin-top: 10px;
+    }
+/*section register y login*/
+    .rg_box {
+        grid-template-columns: 1fr;
+    }
+    .rg_left{
+        height: 200px;
+        border: none;
+    }
+    .left {
+        height: 200px;
+    }
+    .left {
+        border: none;
+    }
+    .right h3 {
+        font-size: 21px;
+    }
+    .right {
+        border-top: 2px solid var(--negrosecond);
+    }
+    .log_box {
+        grid-template-columns: 1fr;
+    }
 }
 
+@media (max-width: 768px) {
+    .navbar span {
+        display: none;
+    }
+
+    .nav__links li {
+        display: inline-block;
+        padding: 0px 5px;
+    }
+
+    /*section contacto*/
+    #contacto {
+        margin-bottom: 150px;
+    }
+
+    .container__inputs {
+        display: flex;
+        justify-content: center;
+    }
+    /*section footer*/
+    footer {
+        margin-top: 40px;
+    }
+
+    .grupo-1{
+        width: 90%;
+        grid-gap: 20px;
+        padding: 35px 0px;
+    }
+}
+
+@media (max-width: 1024px) {
+     /*section contacto*/
+     #contacto {
+        margin-bottom: 150px;
+    }
+    .grupo-1{
+        width: 90%;
+        padding: 35px 0px;
+    }
+}
