@@ -52,7 +52,7 @@ header{
 
 .nav__links li {
    display: inline-block;
-   padding: 0px 20px;
+   padding: 0px 15px;
 }
  
 .nav__links li a {
@@ -188,14 +188,14 @@ video {
 }
 
 #museo h2 {
-   font-size: 50px;
+   font-size: 42px;
    font-family: 'Unica One';
    font-weight: 500;
    text-align: center;
 }
 
 .museo-info p {
-   font-size: 20px;
+   font-size: 18px;
    letter-spacing: 1px;
    text-align: center;
    color: #c5c7e2;
@@ -227,10 +227,18 @@ video {
 }
 
 #galeria h2 {
-   font-size: 50px;
+   font-size: 42px;
    font-family: 'Unica One';
    font-weight: 500;
    text-align: center;
+}
+
+#galeria p {
+   font-size: 18px;
+   letter-spacing: 1px;
+   text-align: center;
+   color: #c5c7e2;
+   padding: 10px;
 }
 
 .container {
@@ -239,14 +247,15 @@ video {
    justify-content: center;
    max-width: 1200px;
    flex-wrap: wrap;
+   margin-top: 15px;
 }
 
 .card {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   width: 250px;
-   margin: 20px;
+   width: 240px;
+   margin: 15px;
    border-radius: 10px;
    overflow: hidden;
    background: gray;
@@ -271,22 +280,24 @@ video {
 
 .card .contenido h3 {
    font-family: 'Trykker';
-   font-size: 16px;
+   font-size: 18px;
    letter-spacing: 1px;
    font-weight: 500;
-   letter-spacing: 1px;
+   padding: 5px 0px;
 }
 
 .card .contenido a {
    text-decoration: none;
    display: inline-block;
    padding: 6px 8px;
-   margin-top: 10px;
+   margin-top: 13px;
    border: 1px;
    border-radius: 5px;
    color: var(--primary);
    background:var(--amarillosecond);
-   letter-spacing: 1px;
+   letter-spacing: 2px;
+   font-weight: 600;
+   font-size: 16px;
 }
 
 .card .contenido a:hover {
@@ -309,8 +320,10 @@ video {
    border: 1px;
    border-radius: 5px;
    padding: 6px 8px;
-   font-weight: 500;
-   font-size: 16px;
+   font-weight: 600;
+   font-size: 17px;
+   letter-spacing: 1px;
+   box-shadow: 6px 6px 20px rgb(0 0 0 / 0.4);
 }
 
 .btn-vm button:hover{
@@ -321,8 +334,12 @@ video {
 
 .btn-vm {
    display: flex;
-   padding: 30px 0px 20px 0px;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+   padding: 10px;
 }
+
 /*section eventos*/
 #eventos {
    padding: 40px 0px;
@@ -333,10 +350,19 @@ video {
 }
 
 .titulo_eventos h2 {
-   font-size: 50px;
+   font-size: 42px;
    font-family: 'Unica One';
    font-weight: 500;
    text-align: center;
+}
+
+.titulo_eventos p {
+   font-size: 18px;
+   letter-spacing: 1px;
+   text-align: center;
+   color: #c5c7e2;
+   padding: 10px;
+   margin: 5px;
 }
 
 .events_cards_container {
@@ -363,17 +389,44 @@ video {
    transition: all 600ms ease;
 }
 
+.btn-cm button {
+   text-decoration: none;
+   color: var(--primary);
+   background: var(--txtgrey);
+   border: 1px;
+   border-radius: 5px;
+   padding: 6px 8px;
+   font-weight: 600;
+   font-size: 17px;
+   letter-spacing: 1px;
+   box-shadow: 6px 6px 20px rgb(0 0 0 / 0.4);
+}
+
+.btn-cm button:hover{
+   color: var(--primary);
+   background: var(--amarillosecond);
+   border: 1px solid var(--amarillosecond);
+}
+
+.btn-cm {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+   padding: 10px;
+}
+
 /*section tickets*/
 #tickets {
    padding: 40px 0px 10px 0px;
-   width: 100%;
+   width: 90%;
    display: flex;
    flex-direction: column;
    max-width: 1200px;
 }
 
 #tickets h2 {
-   font-size: 50px;
+   font-size: 42px;
    font-family: 'Unica One';
    font-weight: 500;
    text-align: center;
@@ -385,35 +438,33 @@ video {
    align-items: center;
    justify-content: center;
    gap: 15px;
-   padding: 30px 0px 10px 0px;
+   padding: 30px  0px;
    max-width: 1200px;
-   width: 100%;
 }
  
-.products {
-   padding: 20px;
-   border-radius: 15px;
+.img_acc {
    display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-   margin-bottom: 20px;
-   width: 100%;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 40%;
+   padding: 10px;
 }
- 
+
+.img_acc img {
+   width: 420px;
+   box-shadow: 0 25px 25px -12px rgb(0 0 0 / 0.4);
+   border: 1px solid hsl(0, 0%, 10%);
+}
+
 .product-info {
    display: flex;
    flex-direction: column;
-   justify-content: space-evenly;
-   gap: 20px;
-   padding: 30px 0px;
-}
- 
-.product-top,
-.product-mid,
-.product-bot {
-   display: flex;
-   justify-content: space-between;
    align-items: center;
+   justify-content: center;
+   gap: 30px;
+   width: 480px;
+   padding: 15px;
 }
 
 .product-top p,
@@ -425,7 +476,7 @@ video {
  
 .product-offer {
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
    width: 100%;
    gap: 20px;
 }
@@ -453,13 +504,6 @@ video {
    transform: scale(1.1);
 }
 
-#tickets img {
-   width: 45%;
-   height: 350px;
-   padding: 20px;
-   margin: 0px 20px;
-}
-
 .linea {
    width: 60px;
    border: solid 1px var(--color2);
@@ -469,14 +513,14 @@ video {
 /*section contacto*/
 #contacto {
    padding: 10px 10px 50px 10px;
-   width: 100%;
+   width: 90%;
    display: flex;
    flex-direction: column;
    max-width: 1200px;
 }
 
 #contacto h2 {
-   font-size: 50px;
+   font-size: 42px;
    font-family: 'Unica One';
    font-weight: 500;
    text-align: center;
@@ -515,28 +559,33 @@ video {
 
 .container__inputs{
    display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
-   width: 100%;
-   height: 40%;
+   flex-wrap: wrap;
+   width: 570px;
+   height: 220px;
 }
 
 .container__contact__input{
    background-color:  hsl(0, 0%, 6%);
-   border-radius: 10px;
-   display: flex;
-   flex-wrap: wrap;
+   border-radius: 5px;
+   border: 1px solid  hsl(0, 0%, 6%);
+   display: inline-block;
+   justify-content: center;
    align-items: center;
-   padding: 10px;
-   width: 35%;
-   height: 80%;
-   margin: 5px;
+   width: 175px;
+   height: 120px;
+   margin: 7px;
+   padding: 6px;
+   box-shadow: 6px 6px 20px rgb(0 0 0 / 0.4)
 }
 
-.container__contact__input i {
-   font-size: 15px;
-   align-self: center;
+.icono_contacto {
+   display: flex;
+   justify-content: center;
+   margin: 12px;
+}
+.icono_contacto i {
    color: var(--amarillosecond);
+   font-size: 23px;
 }
 
 .mapa {

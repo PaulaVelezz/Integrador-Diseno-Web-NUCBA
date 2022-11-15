@@ -25,7 +25,7 @@
           <span class="nav-list-divider"></span> 
           <li><a href="#museo">Museo</a></li>
           <span class="nav-list-divider"></span> 
-          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#galeria">Colección</a></li>
           <span class="nav-list-divider"></span> 
           <li><a href="#contacto">Contacto</a></li>
           <span class="nav-list-divider"></span> 
@@ -51,7 +51,7 @@
         <h2>Museo</h2>
         <div class="museo-info">
           <p>
-            El Museo E.C. es una institución cultural que tiene como objetivo
+            El <strong>Museo E.C.</strong> es una institución cultural que tiene como objetivo
             establecer un diálogo entre la memoria artística local y la
             producción contemporánea. Combinando el trabajo sobre su colección,
             con una activa agenda de exposiciones que reúne artistas de diversas
@@ -68,8 +68,12 @@
 
       <!-- section galería -->
       <section id="galeria">
-        <h2>Galería</h2>
-      </section>
+        <h2>Colección</h2>
+        <p>
+          Explorá la colección digital con más de 2000 obras, donde vas a poder encontrar 
+          desde imágenes en alta definición, textos, y bibliografías de les artistas.
+        </p>
+
       <div class="container">
         <div class="card">
           <img src="assets/DP146455.jpg" />
@@ -103,12 +107,15 @@
         </div>
       </div>
       <div class="btn-vm">
-        <button type="button"> Ver más exposiciones <i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i></button>
+        <button type="button"> Ver más <i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i></button>
       </div>
+    </section>
+
       <!-- section eventos -->
       <section id="eventos">
         <div class="titulo_eventos">
-          <h2>Eventos</h2>
+          <h2>Agenda</h2>
+          <p>Encontrá las distintas propuestas día por día.</p>
         </div>
         <div class="events_cards_container">
           <div class="event_card">
@@ -130,6 +137,9 @@
             <img src="./assets/evento6.png">
           </div>
         </div>
+        <div class="btn-cm">
+          <button type="button"> Cargar más <i class="fa-solid fa-chevron-right"></i></button>
+        </div>
       </section>
 
       <!-- section tickets -->
@@ -137,11 +147,13 @@
         <h2>TICKETS</h2>
         <div class="products-container">
           <!-- product 1 -->
-          <div class="products">
+          <div class="img_acc">
             <img
               src="./assets/still_life_with_bottle,_carafe,_bread,_and_wine_2014.18.32.jpg"
             />
-            <div class="product-info">
+          </div>
+
+          <div class="product-info">
               <!-- top -->
               <div class="product-top">
                 <div class="product-offer">
@@ -176,7 +188,6 @@
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </section>
 
@@ -189,13 +200,22 @@
           <p>De Martes a Domingos y feriados de 10hs a 19hs.</p>
           <div class="container__inputs">
               <div class="container__contact__input">
-                <p><i class="fa-solid fa-location-dot"></i> Dirección: Av. Calle Falsa 1234</p>
+                <div class="icono_contacto">
+                  <i class="fa-solid fa-location-dot"></i> 
+                </div>
+                <p>Av. Calle Falsa 1234</p>
               </div>
               <div class="container__contact__input">
-                <p><i class="fa-solid fa-phone"></i> Teléfono: (358)-15454545</p>
+                <div class="icono_contacto">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <p>(358)-15454545</p>
               </div>
               <div class="container__contact__input">
-                <p><i class="fa-solid fa-envelope"></i> Mail: ECmuseo@mail.com</p>
+                <div class="icono_contacto">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <p>ECmuseo@mail.com</p>
               </div>
           </div>   
           </div>
