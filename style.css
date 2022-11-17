@@ -439,7 +439,7 @@ video {
    align-items: center;
    justify-content: center;
    gap: 15px;
-   padding: 30px  0px;
+   padding: 40px 0px;
    max-width: 1200px;
 }
  
@@ -458,58 +458,47 @@ video {
    border: 1px solid hsl(0, 0%, 10%);
 }
 
-.product-info {
+
+.container__product__info{
    display: flex;
    flex-direction: column;
+   flex-wrap: wrap;
    align-items: center;
    justify-content: center;
-   gap: 30px;
-   width: 480px;
-   padding: 15px;
-   margin: 7px;
+   width: 445px;
+   margin-left: 35px;
 }
 
-.product-top p,
-.product-offer p {
-   font-size: 19px;
-   font-weight: 400;
-   color: var(--primary);
-}
- 
-.product-offer {
+.container__offer_info{
+   background-color:  hsl(0, 0%, 6%);
+   border-radius: 5px;
+   border: 1px solid  hsl(0, 0%, 6%);
    display: flex;
-   justify-content: center;
-   width: 100%;
-   gap: 20px;
-}
- 
-.offer {
-   display: flex;
-   gap: 20px;
+   justify-content: space-evenly;
    align-items: center;
-   font-weight: 600;
+   width: 405px;
+   height: 80px;
+   margin: 10px;
+   gap: 5px;
+   box-shadow: 6px 6px 20px rgb(0 0 0 / 0.4)
 }
- 
-.btn-buy {
+
+.btn_offer_buy a {
    background-color: var(--amarillosecond);
    border: none;
-   padding: 10px 15px;
-   color: var(--bg-white);
-   border-radius: 10px;
-   cursor: pointer;
-   font-size: 15px;
-   letter-spacing: 1px;
-}
-
-.btn-buy:hover {
-   box-shadow: 6px 6px 20px rgb(0 0 0 / 0.4);
-   transform: scale(1.1);
-}
-
-.linea {
-   width: 60px;
-   border: solid 1px var(--color2);
+   padding: 6px 14px;
+   color: var(--negrosecond);
    border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+   font-weight: 600;
+   letter-spacing: 1.5px;
+}
+
+.btn_offer_buy a:hover{
+   background-color: #a7a9be;
+   color: var(--primary);
+   font-weight: 500;
 }
 
 /*section contacto*/

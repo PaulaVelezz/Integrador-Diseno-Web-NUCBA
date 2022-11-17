@@ -153,10 +153,33 @@
         margin-bottom: 150px;
     }
 
+    .contact__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .container__inputs {
         display: flex;
         justify-content: center;
     }
+
+    .mapa {
+        display: none;
+    }
+    
+    /*section tickets*/
+    .products-container{
+        gap: 25px;
+    }
+
+    .container__product__info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+    }
+
     /*section footer*/
     footer {
         margin-top: 40px;
