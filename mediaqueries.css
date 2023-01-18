@@ -1,6 +1,12 @@
 @media (max-width: 576px) {
     .hero-info h1 {
-        font-size: 40px;
+        font-size: 38px;
+        padding: 10px;
+    }
+
+    .hero-info {
+        gap: 0;
+        margin-top: 45px;
     }
 
     #hero {
@@ -110,6 +116,12 @@
 @media (max-width: 447px) {
     .hero-info h1 {
         font-size: 30px;
+    }
+}
+
+@media (max-width: 376px) {
+    .hero-info h1 {
+        font-size: 27px;
     }
 }
 
