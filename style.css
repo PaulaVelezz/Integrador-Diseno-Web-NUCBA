@@ -809,6 +809,7 @@ html {
 .log_input:focus {
    background-color: #faf3ea;
    border: 1px solid var(--color3);
+   color:hsl(0, 0%, 6%);
 }
 
 .right button{
