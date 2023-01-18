@@ -169,6 +169,15 @@
         align-items: center;
         justify-content: center;
     }
+
+    .box__footer img {
+       position: relative;
+       left: 15px;
+    }
+
+    .box__footer h3 {
+        text-align: center;
+    }
 }
 
 @media (max-width: 862px) {
