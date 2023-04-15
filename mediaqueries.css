@@ -1,3 +1,15 @@
+@media (max-width: 376px) {
+    .hero-info h1 {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 447px) {
+    .hero-info h1 {
+        font-size: 30px;
+    }
+}
+
 @media (max-width: 576px) {
     .hero-info h1 {
         font-size: 38px;
@@ -24,7 +36,7 @@
     }
 
     .museo-info p {
-    font-size: 17px;
+    font-size: 1em;
     }
     
 /*section galería*/
@@ -32,10 +44,18 @@
     font-size: 43px;
     }
 
+    #galeria p {
+        font-size: 1em;
+    }
+
 /*section eventos*/
     .event_card {
         max-width: 300px;
-}
+    }
+
+    .titulo_eventos p{
+        font-size: 1em;
+    }
 
 /*section tickets*/
     #tickets h2 {
@@ -61,15 +81,11 @@
     font-size: 43px;
     }
 
-    .mapa {
-        display: none;
+    .contact_txt{
+        padding: 7px;
+        font-size: 1em;
     }
 
-    .contact__container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 /*section footer*/
     .grupo-1{
         width: 90%;
@@ -110,18 +126,6 @@
     }
     .log_box {
         grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 447px) {
-    .hero-info h1 {
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 376px) {
-    .hero-info h1 {
-        font-size: 27px;
     }
 }
 
@@ -180,6 +184,15 @@
     }
 }
 
+@media (max-width: 817px) {
+    .container__contact__elements{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
+
 @media (max-width: 862px) {
     .navbar span {
         display: none;
@@ -192,22 +205,7 @@
 
     /*section contacto*/
     #contacto {
-        margin-bottom: 150px;
-    }
-
-    .contact__container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .container__inputs {
-        display: flex;
-        justify-content: center;
-    }
-
-    .mapa {
-        display: none;
+        margin-bottom: 100px;
     }
     
     /*section tickets*/
@@ -231,22 +229,5 @@
         width: 90%;
         grid-gap: 20px;
         padding: 35px 0px;
-    }
-}
-
-@media (max-width: 1024px) {
-     /*section contacto*/
-     #contacto {
-        margin-bottom: 150px;
-    }
-    .grupo-1{
-        width: 90%;
-        padding: 35px 0px;
-    }
-}
-
-@media (max-width: 1274px) {
-    #contacto {
-        margin-bottom: 150px;
     }
 }
