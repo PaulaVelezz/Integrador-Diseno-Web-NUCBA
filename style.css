@@ -609,7 +609,8 @@ footer {
    align-items: center;
    justify-content: space-around;
    gap: 20px;
-   padding: 18px 0px 14px 0px;
+   /*padding: 18px 0px 14px 0px;*/
+   padding: 14px;
    margin: auto;
 }
 
