@@ -43,6 +43,10 @@
         font-size: 1em;
     }
 
+    .cards__container{
+        gap: 25px;
+    }
+
 /*section eventos*/
     .events_cards_container{
         gap: 45px;
