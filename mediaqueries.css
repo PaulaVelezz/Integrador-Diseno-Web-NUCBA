@@ -103,29 +103,6 @@
     .box__footer h2{
         margin-top: 10px;
     }
-/*section register y login*/
-    .rg_box {
-        grid-template-columns: 1fr;
-    }
-    .rg_left{
-        height: 200px;
-        border: none;
-    }
-    .left {
-        height: 200px;
-    }
-    .left {
-        border: none;
-    }
-    .right h3 {
-        font-size: 21px;
-    }
-    .right {
-        border-top: 2px solid var(--negrosecond);
-    }
-    .log_box {
-        grid-template-columns: 1fr;
-    }
 }
 
 @media (max-width: 714px){
@@ -182,6 +159,30 @@
 
     .box__footer h3 {
         text-align: center;
+    }
+
+    /*section register y login*/
+    .rg_box {
+        grid-template-columns: 1fr;
+    }
+    .rg_left{
+        height: 200px;
+        border: none;
+    }
+    .left {
+        height: 200px;
+    }
+    .left {
+        border: none;
+    }
+    .right h3 {
+        font-size: 21px;
+    }
+    .right {
+        border-top: 2px solid var(--negrosecond);
+    }
+    .log_box {
+        grid-template-columns: 1fr;
     }
 }
 
