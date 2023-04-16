@@ -44,8 +44,12 @@
     }
 
 /*section eventos*/
+    .events_cards_container{
+        gap: 45px;
+    }
     .event_card {
         max-width: 274px;
+        padding: 8px;
     }
 
     .titulo_eventos p{
