@@ -2,11 +2,30 @@
     .hero-info h1 {
         font-size: 27px;
     }
+
+/*section register y login*/
+    .right button{
+        padding: 9px;
+    }
+    .tyc{
+        text-align: center;
+        align-items: center;
+        font-size: small;
+    }
 }
 
 @media (max-width: 447px) {
     .hero-info h1 {
         font-size: 30px;
+    }
+
+/*section register y login*/
+    .left, .rg_left {
+        max-height: 100px;
+    }
+    .log_container, 
+    .rg_container{
+        padding: 10px 40px;
     }
 }
 
@@ -110,6 +129,12 @@
     }
     .box__footer h2{
         margin-top: 10px;
+    }
+
+    /*section register y login*/
+    .log_container, 
+    .rg_container{
+        padding: 10px 100px;
     }
 }
 

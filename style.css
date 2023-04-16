@@ -823,9 +823,11 @@ footer {
    margin-top: 10px;
 }
 
-.right label{
-   vertical-align: middle;
-   color: var(--color3);
+.right label {
+   color: var(--background);
+   width: 100%;
+   font-weight: 600;
+   display: flex;
 }
 
 .right p {
@@ -898,6 +900,6 @@ footer {
    color: #f14d4d;
 }
 
-.tyc label{
-   color: var(--negrosecond);
+.tyc {
+   display: flex;
 }
