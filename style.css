@@ -260,6 +260,9 @@ video {
    max-width: 1200px;
    padding: 10px;
    margin-top: 10px;
+   align-content: center;
+   justify-content: center;
+   align-items: center;
 }
 
 .card {
