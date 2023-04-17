@@ -12,6 +12,12 @@
         align-items: center;
         font-size: small;
     }
+    .right{
+        padding: 25px 25px;
+    }
+    .log_input{
+        padding: 7px;
+    }
 }
 
 @media (max-width: 447px) {
@@ -21,11 +27,7 @@
 
 /*section register y login*/
     .left, .rg_left {
-        max-height: 100px;
-    }
-    .log_container, 
-    .rg_container{
-        padding: 10px 40px;
+        max-height: 70px;
     }
 }
 
@@ -134,7 +136,10 @@
     /*section register y login*/
     .log_container, 
     .rg_container{
-        padding: 10px 100px;
+        padding: 10px 50px;
+    }
+      .right button{
+        padding: 9px;
     }
 }
 
